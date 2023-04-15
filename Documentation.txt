@@ -1,0 +1,30 @@
+Decimal Rounder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Main idea:
+----------
+This program asks the user for decimal input. Then the program prompts the user to enter the precision of the decimal place
+from 1 decimal place to 4 decimal places, rounding if needed. Once the program has both inputs it rounds the decimal to that
+specific decimal place.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+User input:
+---------------
+The user is prompted with entering a decimal number (a float) this float is taken in as a string so it can be checked for anything 
+other than numbers and a decimal point. Once the string (user float) is checked if it has anything other than that it is converted 
+into a float and then rounded by whatever the precision of the number was selected by the user in the next prompt.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Checking the input and converting it:
+----------------------------
+Once the user enters the float it is taken in as a string. This is because taking it in as a string we can check the ASCII chart 
+to eliminate any characters that are above or below the accepted ASCII values for the numbers 0-9. Once we check each character 
+the turn those characters into numbers by subtracting by the character 0 giving us values of 0-9. Once we have that we just 
+turn those values we retrieved into a float and multiply by 10 then add the next number in the list. This is so we can get all 
+the numbers as it was inputted and not added to one another. Once we do the part before the decimal we do the same for the part 
+after the decimal then divide by 10^n (n being how many numbers were past the decimal). Then adding both parts together give 
+the float as it was inputted by the user. After this step, we multiply by 10  to the power of the precision of the user input. 
+Adding .5 will round up the float, turn it into an integer (to get rid of any numbers that are still in the decimal, turn it 
+back into a float, and divide the same number 10 by the power of the precision. This would give back the float entered by the 
+user to the precision of their choice. Then printing the integer is what is left.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
