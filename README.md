@@ -19,19 +19,19 @@ specific decimal place.
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the program, prompted to pick an option from the main menue: <br/>
+Launch the program, Prompts the user to enter a float: <br/>
 <img src="https://github.com/DemonAxe1/img/blob/main/MIPS%201.PNG?raw=true.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-The user picked 1 (which converets Fahrenheit to Celsius) and is prompted to enter a temp:  <br/>
+When the float is entred it is printed back to confirm the entry and asks the user to neter the precision of the decimal place:  <br/>
 <img src="https://github.com/DemonAxe1/img/blob/main/MIPS%20dec%202%20flaot%20entery%202.PNG?raw=true.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Results are printed and the user is prompted again to pick an option from the main menue: <br/>
+Precision 1 is 1st decimal place, precision 2 is the second decimal place, precision 3 is the third decimal place, and precision 4 is the fourth decimal place: <br/>
 <img src="https://github.com/DemonAxe1/img/blob/main/MIPS%20dec%202%20flaot%20entery.PNG?raw=true.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-The user picked 2 (which converets Fahrenheit to kelvin) and is prompted to enter a temp:  <br/>
+Once the presision is picked, the program rounds to that decimal place and prints it out. The program then ends:  <br/>
 <img src="https://github.com/DemonAxe1/img/blob/main/MIPS%20dec%203%20Final%20sulution.PNG?raw=true.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 </p>
